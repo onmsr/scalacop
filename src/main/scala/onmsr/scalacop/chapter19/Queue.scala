@@ -17,8 +17,8 @@ class SlowHeadQueue[T](elems: List[T]) {
 // 1 2 3 4 5 6 -> (1 2 3) (6 5 4)
 // 後半部分を逆転してもっておく
 class Queue[T](
-  private val leading: List[T],
-  private val trailing: List[T]
+  private val leading: List[T] = Nil,
+  private val trailing: List[T] = Nil
 ) {
   /**
    * キューを返す。先頭部分が空のときに後半部分を前半部分に移し替える。
