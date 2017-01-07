@@ -44,3 +44,4 @@ object HybridQueue {
  * - クラス自体を隠す+トレイトを公開
  *
  */
+
