@@ -42,6 +42,6 @@ object Version {
  * - super呼び出しが動的に束縛される。クラスは静的。
  *
  * abstract classとtraitの使い分け基準
- * - abstract class: ふるまいが再利用されない場合
+ * - abstract class: ふるまいが再利用されない場合。newできない。
  * - trait: 複数の無関係なクラスで再利用される可能性がある場合。クラス階層の異なる部分にミックスインできるから。
  */

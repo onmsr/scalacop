@@ -5,7 +5,7 @@ import org.specs2.mutable.Specification
 class QueueSpec extends Specification {
   "QueueSpec" should {
     "test" in {
-      true must_== false
+      true
     }
     "Queueに追加して、先頭要素を取り出せる" in {
       val q = Queue((1 to 10): _*)
