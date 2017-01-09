@@ -1,12 +1,10 @@
 package onmsr.scalacop.chapter25
 
-
 abstract class Base
 case object A extends Base
 case object T extends Base
 case object G extends Base
 case object U extends Base
-
 
 object Base {
   val fromInt: Int => Base = Array(A, T, G, U)
@@ -16,11 +14,8 @@ object Base {
 final class RNA1 private (val groups: Array[Int], val length: Int) extends IndexedSeq[Base] {
   import RNA1._
   def apply(idx: Int): Base = {
-    if (idx < 0 || length <= idx) {
-      throw new IndexOutOfBoundsException
-    } else {
-      Base.fromInt(groups(idx/N) >> (idx % N * S) & M)
-    }
+    if (idx < 0 || length <= idx) throw new IndexOutOfBoundsException
+    Base.fromInt(groups(idx/N) >> (idx % N * S) & M)
   }
 }
 
@@ -37,3 +32,6 @@ object RNA1 {
   }
   def apply(bases: Base*) = fromSeq(bases)
 }
+
+
+// TODO

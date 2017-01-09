@@ -7,10 +7,6 @@ import org.specs2.mutable.Specification
 class MainSpec extends Specification {
   "MainSpec" should {
 
-    "test" in {
-      true
-    }
-    
     "implicit parameter test" in {
       implicit val (a, b, c) = (Dollar(0), Euro(0), En(0))
       val v = Main.test2()
