@@ -8,3 +8,4 @@ object Main {
   def kuku(n: Int): String = List.tabulate(n+1, n+1)(_*_).map(_.mkString("\t")).mkString("\n")
 }
 
+
