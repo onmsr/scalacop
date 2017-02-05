@@ -6,9 +6,7 @@ class MainSpec extends Specification {
   "MainSpec" should {
     "test" in {
       val a = ExprParser.parseExpr("3 * (1 + 4)")
-      println(a)
       true
     }
-
   }
 }
